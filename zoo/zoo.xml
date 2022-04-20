@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zoo>
+   <mamiferos>
+      <animal>
+	      <especie> Gato </especie>
+	      <nombre>Garfield</nombre>
+      </animal>
+      <animal>  
+      		<especie> mono </especie>
+	        <nombre>Juanjo</nombre>
+	  </animal>
+   </mamiferos>
+   <reptiles>
+      <animal>  
+      	  <especie> Lagarto </especie>
+	      <nombre> javier</nombre>
+	  </animal>
+      <animal>  
+      	  <especie> cocodrilo </especie>
+	      <nombre>pancho</nombre>
+	  </animal>
+   </reptiles>
+</zoo>

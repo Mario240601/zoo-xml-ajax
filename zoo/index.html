@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ZOO</title>
+<script >
+	function extraerDatos() {
+		
+	 var xhr = new XMLHttpRequest();
+	 xhr.onreadystatechange = function () {
+	 	if (xhr.readyState == 4 && xhr.status == 200){
+	 		cargar(xhr);
+	 	}
+	 }
+	 xhr.open ("GET" , "zoo.xml");
+	 xhr.send();
+	}
+	function cargar(xhr){
+
+		var xhrDoc = xhr.responseXML;
+		var lista_especies = xhrDoc.getElementsByTagName("animal");
+		for (i=0; i < lista_especies.length; i++){
+		console.log(lista_especies[i].getElementsByTagName("especie")[0].childNodes[0].nodeValue);
+		} 
+	}
+</script>
+</head>
+<body onload="extraerDatos();">
+
+
+</body>
+</html>
